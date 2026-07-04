@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins","serif";
+}
+body{
+    background-color: #eeeff1;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    height: 80px;
+
+    .navbar-heading{
+        color:#1a1c20;
+        font-size: 22px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .icon-sectionContainer{
+        a{
+            margin: 0 10px;
+            text-decoration: none;
+            color: #1a1c20;
+
+            span{
+            margin-left: 5px;
+            }
+        }
+        .emailBtn{
+            color: #fff;
+            background-color: #1a1c20;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.intro-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px;
+    margin-bottom: 50px;
+    gap: 40px;
+    padding: 0px 50px;
+
+   .introSectionContent{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    h2{
+     font-size: 45px;
+    }
+   
+    .links{
+      margin-top: 25px;
+
+      a{
+        display: inline-block;
+        padding: 5px 10px;
+        border: 2px solid #4a76ee;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        transition: 0.1s;
+        text-decoration: none;
+      }
+    }
+
+   }
+   .profile-image{
+    img{
+        width:350px;
+        border-radius: 50%;
+    }
+   }
+}
+
+.skillSection{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding: 0px 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h2{
+        text-align: center;
+        font-size: 35px;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    .dev-Skill-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+       
+        .cells{
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+            gap: 10px;
+            width: 200px;
+            padding: 10px 20px;
+            margin: 10px;
+            border:1.5px solid #d3d3d3;
+            border-radius: 5px;
+        }
+    }
+    img{
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        border-radius: 2px;
+    }
+}
+
+.testimonySection{
+display: flex;
+flex-direction: column;
+margin-bottom: 100px;
+padding: 0px 50px;
+}
+.testimonyContent{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
