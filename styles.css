@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins","serif";
+    scroll-behavior: smooth;
 }
 body{
     background-color: #eeeff1;
@@ -130,9 +131,168 @@ display: flex;
 flex-direction: column;
 margin-bottom: 100px;
 padding: 0px 50px;
+
+h2{
+    font-size: 35px;
+    margin-bottom: 30px;
 }
 .testimonyContent{
     display: flex;
     gap: 50px;
     align-items: center;
+
+    .testimonyImgContainer{
+        img{
+            width: 200px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .testimony-image-header{
+            font-weight: 600;
+        }
+        text-align: center;
+    }
+    .testimonyTextContainer{
+        flex:1;
+    }
+}
+}
+
+.contactSection{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding: 0px 50px;
+
+    h2{
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .contactContentContainer{
+        display: flex;
+        gap: 50px;
+
+        .contactTextcontent{
+            flex: 1;
+        }
+        .contactformcontent{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            input{
+                border: 2px solid #4a76ee;
+                padding: 10px;
+                margin-bottom: 15px;
+                outline: none;
+                /* resize: none; */
+            }
+            textarea{
+                 border: 2px solid #4a76ee;
+                padding: 10px;
+                margin-bottom: 15px;
+                outline: none;
+                resize: none;
+            }
+            button{
+                font-size: 16px;
+                font-family: 'poppins', sans-serif;
+                color:#fff;
+                background-color: #4a76ee;
+                border: none;
+                height: 50px;
+                cursor: pointer;
+                transition: 0.1s;
+            }
+        }
+    }
+}
+
+@media (max-width:600px){
+    .navBar{
+        padding: 0px 20px;
+
+        .icon-sectionContainer{
+            span{
+                display: none;
+
+            }
+            .emailBtn{
+                background-color: transparent;
+                padding: 0px;
+                color:#1a1c20
+            }
+            a{
+                font-size: 22px;
+            }
+        }
+    }
+
+    .intro-section{
+        padding: 0px 20px;
+        flex-direction: column-reverse;
+
+        .introSectionContent{
+            h2{
+                font-size: 30px;
+            }
+        }
+    }
+
+    .skillSection{
+        padding: 0px 20px;
+    }
+
+    .testimonySection{
+        padding: 0px 20px;
+        text-align: center;
+
+        .testimonyContent{
+            flex-direction: column;
+        }
+    }
+
+    .contactSection{
+        padding: 0px 20px;
+
+        .contactContentContainer{
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width:740px){
+     .intro-section{
+        
+        flex-direction: column-reverse;
+
+        .introSectionContent{
+            h2{
+                font-size: 30px;
+            }
+        }
+           .profile-image{
+                img{
+                    width: 300px ;
+                }
+            }
+    }
+    
+    .testimonySection{
+        
+        text-align: center;
+
+        .testimonyContent{
+            flex-direction: column;
+        }
+    }
+
+     .contactSection{
+        .contactContentContainer{
+            flex-direction: column;
+        }
+    }
 }
